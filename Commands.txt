@@ -1,0 +1,18 @@
+//Post link:
+    https://www.reactnativeschool.com/handling-deep-links-with-react-navigation
+
+//The app is configured to accept and handle deep linking. To test it run the following command:
+
+# iOS
+xcrun simctl openurl booted exp://127.0.0.1:19000/--/details/3
+
+# Android
+adb shell am start -W -a android.intent.action.VIEW -d "exp://127.0.0.1:19000/--/details/3"
+
+//If not using expo, or it's a live app, it would look like:
+
+# iOS
+xcrun simctl openurl booted swapi://details/3
+
+# Android
+adb shell am start -W -a android.intent.action.VIEW -d "swapi://details/3"
